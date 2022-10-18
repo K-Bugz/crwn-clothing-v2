@@ -6,13 +6,14 @@ import {
   GoogleAuthProvider,
 } from 'firebase/auth';
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-  authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-  projectId: 'crwn-clothing-db-98d4d',
-  storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-  messagingSenderId: '626766232035',
-  appId: '1:626766232035:web:506621582dab103a4d08d6',
+  apiKey: "AIzaSyCsnUCCSkL7SuCmjzVa87prSnAmG-C9S4c",
+  authDomain: "crwn-clothin-db-95946.firebaseapp.com",
+  projectId: "crwn-clothin-db-95946",
+  storageBucket: "crwn-clothin-db-95946.appspot.com",
+  messagingSenderId: "160550322904",
+  appId: "1:160550322904:web:0f73b7e1b1df0668d50dad"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
