@@ -66,7 +66,7 @@ export const createUserDocumentFromAuth = async (
 };
 
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
-  if (!email || !password) return;
+  if (!email || !password) return; // if you dont get an email or password then it exits.
 
   return await createUserWithEmailAndPassword(auth, email, password);
 };

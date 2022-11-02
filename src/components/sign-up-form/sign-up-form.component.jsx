@@ -19,7 +19,7 @@ const defaultFormFields = {
 
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-  const { displayName, email, password, confirmPassword } = formFields;
+  const { displayName, email, password, confirmPassword } = formFields; // decronstructed values from formfield that we use to populate in the fields inputs below. 
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -50,9 +50,10 @@ const SignUpForm = () => {
     }
   };
 
+  // This was cool. 
   const handleChange = (event) => {
     const { name, value } = event.target;
-
+    // the [name]: value allows us to use a generic handleChange function that understands which one ot update by the name. 
     setFormFields({ ...formFields, [name]: value });
   };
 
